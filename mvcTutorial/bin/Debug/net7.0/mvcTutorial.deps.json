@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "mvcTutorial/1.0.0": {
+        "runtime": {
+          "mvcTutorial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "mvcTutorial/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

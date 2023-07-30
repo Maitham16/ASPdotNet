@@ -1,0 +1,61 @@
+Controllers
+
+Controllers are responsible for handling the incoming HTTP requests, performing some 
+operations, and then generating the HTTP responses. Here is a very basic example of a 
+controller:
+
+    using Microsoft.AspNetCore.Mvc;
+
+    namespace mvcTutorial.Controllers
+    {
+        public class HomeController : Controller
+        {
+            public IActionResult Index()
+            {
+                return View();
+            }
+        }
+    }
+
+Views
+
+Views are responsible for presenting content through the user interface. They should 
+contain only logic related to generating the user interface. Let's create an Index view 
+that will be returned by our Index action.
+
+Create a new file in Views/Home/Index.cshtml and add the following content:
+
+<h1>Welcome to ASP.NET Core MVC!</h1>
+
+Models
+
+Models in an MVC application can be responsible for retrieving data and for performing 
+business logic. Typically, model objects retrieve and store model state in a database. 
+In this case, the model doesn't have any logic, it only has properties. Here is an example:
+
+namespace mvcTutorial.Models
+{
+    public class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+}
+
+to run the application, type the following command in the terminal:
+
+    dotnet run
+
+and there you go, you have a running ASP.NET Core MVC application. You can access it by
+typing the following URL in your browser. The port number may be different but it will
+be displayed in the terminal.
+
+You should expect the terminal displayed:
+
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5168
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
